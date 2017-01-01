@@ -2,7 +2,7 @@
 
 ### Project description
 
-Rap, putting it ., is commonly considered as one of the less sophisicated genres of music. Coarse lyrics focusing mainly on agression, drugs and money, oversimplified beat, repetitive themes, widespread strong language usage.
+Rap is commonly considered as one of the less sophisicated genres of music. Coarse lyrics focusing mainly on agression, drugs and money, oversimplified beat, repetitive themes, widespread strong language usage.
 
 I, being a rap music enthusiast myself, see that genre in quite different way. In my opinion the negative opinion is based on stereotypes, which are based on both historical contexts and most popular artist work, which aren't representative for the genre.
 
