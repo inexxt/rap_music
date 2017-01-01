@@ -1,37 +1,38 @@
 # Analysis of polish rap music
 
----
+### Project description
 
-## Project description
+Rap, putting it ., is commonly considered as one of the less sophisicated genres of music. Coarse lyrics focusing mainly on agression, drugs and money, oversimplified beat, repetitive themes, widespread strong language usage.   
+I, being a rap music enthusiast myself, see that genre in quite different way. In my opinion the negative opinion is based on stereotypes, which are based on both historical contexts and most popular artist work, which aren't representative for the genre.
+I see the music through the lenses of unbelievable eloquence, the mastery of language itself, intuitions about the words and rhytm. That's why I decided to collect all the lyrics I could have get my hands on then clean, process and analyze them, and compare rappers and some non-rappers widely accepted as great writers in terms of vocabulary richness, strong language usage, popularity, etc.
 
-Rap jest powszechnie uważany za jedną z mniej ambitnych form muzyki. Prostackie teksty skoncetrowane na przemocy, narkotykach i zarabianiu pieniędzy, prosty bit, powtarzające się motywy, wulgaryzmy pojawiające się w co drugim wersie. 
-Sam będąc fanem rapu, widzę ten gatunek zupełnie inaczej. Moim zdaniem negatywna opinia jest oparta na stereotypie. Widzę tę muzykę przez pryzmat niezwykłej elokwencji i mistrzostwa w operowaniu językiem. Postanowiłem więc zebrać wszystkie dostępne mi teksty, przeanalizować je i porównać raperów (i nieraperów) pod względem zasobu słownictwa, użycia wulgaryzmów, popularności etc.
+### Instruction
 
-Notebooki w tym repozytorium powinno uruchamiać się po kolei, w każdym z nich ustawiając w nagłówku ścieżkę do folderu, w którym mają być zapisywane teksty etc. Do poprawnego działania jest też potrzebny polski słownik morfosyntaktyczny, który można znaleźć pod adresem (TODO). W projekcie nie używam nltk ani żadnego innego gotowego narzędzia, bo nie mają wsparcia dla języka polskiego, i dlatego potrzebne są dodatkowe zależności.
+Names of the notebooks in this repository reflect the order in which they should be run. Each of them require setting of path variables at the beginning, which should be consistent between them. 
+To run, you also need Polimorfologik: a polish morphosyntactic dictionary, which can be found here: https://github.com/morfologik/polimorfologik/releases/tag/2.1
+NLTK nor any different language library is not used in the project, since none of them supports polish.
 
-## Notebooks description
+### What is actually happening here 
 
-Notebooki robią następujące rzeczy:
+Notebooks are doing following things:
+Downloading a list of polish rappers (based on the list of rappers that took part in the Hot16 - a facebook-chain-challenge) from rapgenius, then downloading their lyrics, pre-cleaning them (attributing to the correct artist, language detection, etc.)
+Preprocessing of lyrics - cleaning, stemming, preparation of the dictionaries.
+Analysis of strong language, popularity and vocabulary.
+Doc2rapper :) adaptation of Doc2vec, with experiments on simarity, using Spectral clustering and Affinity propagation, visualizations using PCA and t-SNE.
+R based notebook for better visualization.
 
-0. Ściągnięcie listy raperów (opierając się na liście raperów, którzy wzięli udział w Hot16 - (link)), scrawlowanie ich tekstów z rapgeniusa, wyczyszczenie części tekstów (tylko pod względem języka (oddzielenie polskiego od angielskiego), przypisania autorstwa itp).
-1. Preprocessing tekstów - czyszczenie, stemming, oraz przygotowanie słowników.
-2. Analiza wulgaryzmów, elokwencji, popularności, słownictwa.
-3. Użycie Doc2vec do stworzenia wektorów raperów, klastrowanie ich z użyciem **Affinity propagation**  i **Spectral clustering**, wizualizacja za pomocą **PCA** i **t-SNE**.
-4. Użycie R-owego ggplot2 do wygenerowania 2-wymiarowego wykresu.
+### Todo
 
+For now, there are only rappers analyzed, in the future it should also include poets and writers.
 
-## TODO:
+### Requirements
 
-Do zrobienia jest jeszcze dorzucenie klasycznej polskiej literatury i poezji.
-
-## Requirements
-
-* python 3.5
-* gensim
-* numpy
-* sklearn
-* pandas
-* tqdm
-* langdetect
-* seaborn
-* matplotlib
+python 3.5
+gensim
+numpy
+sklearn
+pandas
+tqdm
+langdetect
+seaborn
+matplotlib
