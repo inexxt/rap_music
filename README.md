@@ -14,7 +14,7 @@ Names of the notebooks in this repository reflect the order in which they should
 
 To run, you also need Polimorfologik: a polish morphosyntactic dictionary, which can be found here: https://github.com/morfologik/polimorfologik/releases/tag/2.1
 
-NLTK nor any different language library is not used in the project, since none of them supports polish.
+NLTK nor any different language library is used in the project, since none of them supports polish.
 
 ### What is actually happening here 
 
